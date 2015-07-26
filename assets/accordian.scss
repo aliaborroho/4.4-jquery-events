@@ -1,21 +1,54 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-.accordion > li:hover > a,
-.accordion > li:target > a,
-.accordion > li > a.active {
-    color: #3e5706;
-    text-shadow: 1px 1px 1px rgba(255,255,255, .2);
+@import 'reset';
+ $fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 
-	background: #a5cd4e;
-    background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
-    background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-    background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-    background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
-    background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+ @import 'font-awesome';
+ @import 'bourbon';
+ @import 'neat';
+
+ .outer-container {
+   position: relative;
+   top: 1em;
+   margin: auto;
+   width: 250px;
+   border: 3px solid black;
+ }
+.buttons {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border-style: none;
 }
+.buttons > p {
+   background-color: #4B4C51;
+   font-weight: bold;
+   font-size: 10pt;
+   color: white;
+   text-align: left;
+   padding: 6px 0 0 8px;
+   border-style: none;
+   height: 35px;
+}
+.fa {
+   padding-right: 10px;
+   font-weight: bold;
+   font-size: 15pt;
+}
+.buttons:hover > p, .buttons.hulk > p{
+   background-color: #6D9500;
+}
+.sub_menu{
+    display: none;
+}
+.sub_menu > li {
+   border-bottom: 1px solid black;
+   list-style-type: decimal;
+   text-align: left;
+   list-style-position: inside;
+   background-color: #DFDFDF;
+   padding: 8px;
+   font-weight: bold;
+   color: #666666;
+   font-size: 9pt;
+}
+
+

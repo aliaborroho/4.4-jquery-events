@@ -3,36 +3,54 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>4.4-jquery</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="accordian.css">
+
+    <title>Accordian</title>
 </head>
 <body>
-<ul class="accordion">
- 	<li id="one" class="files">
- 		<a href="#one">My Files<span>495</span></a>
- 		<ul class="sub-menu">
- 			<li><a href="#"><em>01</em>Dropbox<span>1</span></a></li>
- 		</ul>
- 	</li>
-	<li id="two" class="mail">
- 		<a href="#two">Mail<span>20</span></a>
- 		<ul class="sub-menu">
-			<li><a href="#"><em>01</em>Sub Menu<span>2</span></a></li>
- 		</ul>
- 	</li>
- 	<li id="three" class="cloud">
- 		<a href="#three">Cloud<span>58</span></a>
- 		<ul class="sub-menu">
-			<li><a href="#"><em>01</em>Sub Menu<span>3</span></a></li>
- 		</ul>
- 	</li>
-	<li id="four" class="sign">
- 		<a href="#four">Sign Out</a>
- 		<ul class="sub-menu">
- 			<li><a href="#"><em>01</em>Sub Menu</a></li>
- 		</ul>
- 	</li>
- </ul>
+<div class="outer-container">
+    <button class="buttons my-files">
+ 	<p><i class="fa fa-inbox"></i> My Files </p>
+ 	<ol class="sub_menu menu_one">
+        <li>file context</li>
+        <li>file content</li>
+        <li>file content</li>
+    </ol>
+    </button>
+    <button class="buttons mail">
+        <p><i class="fa fa-envelope-o"></i> Mail</p>
+        <ol class="sub_menu menu_two">
+        <li>file content</li>
+        <li>file content</li>
+        <li>file content</li>
+        </ol>
+    </button>
+    <button class="buttons cloud">
+      <p><i class="fa fa-cloud"></i> Cloud</p>
+       <ol class="sub_menu menu_three">
+       <li>file content</li>
+       <li>file content</li>
+       <li>file content</li>
+        </ol>
+    </button>
+    <button class="buttons sign-out">
+      <p><i class="fa fa-plug"></i> Sign Out</p>
+       <ol class="sub_menu menu_four">
+       <li>file content</li>
+       <li>file content</li>
+       <li>file content</li>
+        </ol>
+    </button>
+ </div>
 
-</body>
-</html>
+
+ <script src="jquery/dist/jquery.min.js"></script>
+ <script src="handlebars/handlebars.js"></script>
+ <script src="accordian.js"></script>
+ </body>
+ </html>
+
+
+
