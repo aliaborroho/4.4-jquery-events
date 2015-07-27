@@ -4,58 +4,52 @@ $fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 @import 'font-awesome';
 @import 'bourbon';
 @import 'neat';
-$green:#8FAA36;
-$gray:#46484C
-html {
-   box-sizing: border-box;
+
+.outer-container {
+    position: relative;
+    top: 1em;
+    margin: auto;
+    width: 250px;
+    border: 3px solid black;
 }
-*, *:before, *:after {
-   box-sizing: inherit;
+.buttons {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-style: none;
 }
-.accordian {
-   padding: 2em;
-}
-.header {
-   font-family: sans-serif;
-   padding: .1em;
-   padding-left: .8em;
-   background-color: $gray;
-   color: white;
-   border: 1px solid black;
-   line-height: 3em;
-   width:10em;
-}
-.header:hover {
-   padding: .1em;
-   padding-left: .8em;
-   background-color: $green;
-   color: $gray;
-   border: 1px solid black;
-}
-.selected {
- background-color: $green;
-  color: $gray;
+.buttons > p {
+    background-color: #4B4C51;
+    font-weight: bold;
+    font-size: 10pt;
+    color: white;
+    text-align: left;
+    padding: 6px 0 0 8px;
+    border-style: none;
+    height: 35px;
 }
 .fa {
-   padding-right: .5em;
-}
-.links{
-   display:none;
-}
-.links li {
-   font-family: sans-serif;
-   width: 10em;
-   padding: .5em;
-   padding-left: .8em;
-   background-color: $gray;
-   color: white;
-   border: 1px solid black;
-}
-.links li:hover {
-   padding: .5em;
-   background-color: $green;
-   color: $gray;
-   border: 1px solid black;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 15pt;
 }
 
+.buttons:hover > p, .buttons.hulk > p {
+    background-color: #6D9500;
+}
 
+.sub_menu {
+    display: none;
+}
+
+.sub_menu > li {
+    border-bottom: 1px solid black;
+    list-style-type: decimal;
+    text-align: left;
+    list-style-position: inside;
+    background-color: #DFDFDF;
+    padding: 8px;
+    font-weight: bold;
+    color: #666666;
+    font-size: 9pt;
+}

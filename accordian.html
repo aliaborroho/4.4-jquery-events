@@ -2,66 +2,57 @@
 
 <html lang="en">
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="accordian.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="accordian.css">
 
     <title>Accordian</title>
 </head>
 <body>
-<ul class="accordian">
-  <li class="header"><i class="fa fa-inbox"></i>  My Files</span>
-  </li>
-  <li>
-    <ul class="links">
-      <li>Dropbox</li>
-      <li>Skydrive</li>
-      <li>FTP Server</li>
-      <li>Dropbox</li>
-      <li>Skydrive</li>
-    </ul>
-</li>
-<li class="header"><i class="fa fa-envelope"></i>Mail</span>
-</li>
-<li>
-    <ul class="links">
-      <li>More Stuff</li>
-      <li>More Stuff</li>
-      <li>More Stuff</li>
-      <li>More Stuff</li>
-      <li>More Stuff</li>
-  </ul>
-</li>
-<li class="header"><i class="fa fa-cloud-upload"></i>Cloud</span>
-</li>
-<li>
-    <ul class="links">
-      <li>Connect</li>
-      <li>Profiles</li>
-      <li>Options</li>
-      <li>Connect</li>
-      <li>Options</li>
-    </ul>
-  </li>
-<li class="header"><i class="fa fa-sign-out"></i>Sign Out</span>
-  </li>
-  <li>
-    <ul class="links">
-      <li>More Stuff</li>
-      <li>More Stuff</li>
-      <li>More Stuff</li>
-      <li>More Stuff</li>
-      <li>More Stuff</li>
-    </ul>
-  </li>
-</ul>
+
+<div class="outer-container">
+    <button class="buttons my-files">
+        <p><i class="fa fa-inbox"></i> My Files</p>
+        <ol class="sub_menu menu_one">
+            <li>some stuff</li>
+            <li>some stuff</li>
+            <li>some stuff</li>
+        </ol>
+    </button>
+
+
+    <button class="buttons mail">
+        <p><i class="fa fa-envelope-o"></i> Mail</p>
+        <ol class="sub_menu menu_two">
+            <li>some stuff</li>
+            <li>some stuff</li>
+            <li>some stuff</li>
+        </ol>
+    </button>
+
+    <button class="buttons cloud">
+        <p><i class="fa fa-cloud"></i> Cloud</p>
+        <ol class="sub_menu menu_three">
+            <li>some stuff</li>
+            <li>some stuff</li>
+            <li>some stuff</li>
+        </ol>
+    </button>
+
+
+    <button class="buttons sign-out">
+        <p><i class="fa fa-plug"></i> Sign Out</p>
+        <ol class="sub_menu menu_four">
+            <li>some stuff</li>
+            <li>some stuff</li>
+            <li>some stuff</li>
+        </ol>
+    </button>
+</div>
 
 <script src="jquery/dist/jquery.min.js"></script>
- <script src="handlebars/handlebars.js"></script>
- <script src="accordian.js"></script>
- </body>
- </html>
-
-
-
+<script src="handlebars/handlebars.js"></script>
+<script src="accordian.js"></script>
+</body>
+</html>

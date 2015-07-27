@@ -1,5 +1,5 @@
 var merge = require('broccoli-merge-trees');
-var Sass = require('broccoli-sass');
+var sass = require('broccoli-sass');
 var funnel = require('broccoli-funnel');
 var injectLivereload = require('broccoli-inject-livereload');
 
@@ -17,6 +17,6 @@ var vendor = funnel('bower_components', {
   files:['handlebars/handlebars.js', 'jquery/dist/jquery.min.js']
 });
 
-var compiledCss = sass (includePaths, 'accordion.scss', 'accordion.css');
+var compiledCss = sass (includePaths, 'accordian.scss', 'accordian.css');
 
 module.exports = merge([publicWithReload, 'assets/js', compiledCss, vendor]);
